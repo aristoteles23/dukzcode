@@ -16,7 +16,7 @@ const HomePage = () => {
     return (
         <React.Fragment>
             <Navbar />
-            <div className="container-fluid p-4">
+            <div className="container-fluid p-3">
                 <section>
                     <div className="row align-items-center justify-content-center m-3">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -47,7 +47,7 @@ const HomePage = () => {
                 </section>
 
                 <section>
-                    <div className="row justify-content-center mx-lg-5 mt-3 p-2">
+                    <div className="row justify-content-center mx-sm-2 mx-md-3 mx-lg-4 mx-xl-5 mt-3 p-2">
                         {
                             cards.map(card => <CardItem key={card.id} card={card} />)
                         }

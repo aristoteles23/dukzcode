@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import logoImage from '../../site-logo.svg';
 
 const Navbar = () => {
     const [search, setSearch] = useState('');
-
+    let history = useHistory();
     const searchOnSubmit = (e) => {
         e.preventDefault();
-        console.log(search);
+        if (search !== '') {
+            history.push('/search/' + search)
+        }
     }
 
     const searchOnChange = (e) => setSearch(e.target.value);
@@ -15,7 +18,9 @@ const Navbar = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <Link className="navbar-brand text-white" to="/" replace >!DUKZCODE</Link>
+                    <Link className="navbar-brand text-white" to="/" replace>
+                        <img className="mr-2" src={logoImage} alt="site-logo.svg" /> DUKZCODE
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
