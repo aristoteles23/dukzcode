@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../ui/Navbar';
+import Footer from '../ui/Footer';
+import utilService from '../../data/utilService';
+import CardItem from '../home/CardItem';
 import homeImage from '../../promo-figure-alt.svg';
 
 const HomePage = () => {
+
+    const [cards, setCards] = useState([]);
+
+    useEffect(() => {
+        setCards(utilService.getCardsHome());
+    }, [])
+
     return (
         <React.Fragment>
             <Navbar />
@@ -37,71 +47,15 @@ const HomePage = () => {
                 </section>
 
                 <section>
-                    <div className="row justify-content-center mt-3 p-2">
-                        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                            <div className="card card-border mb-3">
-                                <div className="card-header text-center">
-                                    <i className="fa fa-code fa-3x" aria-hidden="true"></i>
-                                </div>
-                                <div className="card-body text-center">
-                                    <h4 className="card-title">Dark card title</h4>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                            <div className="card card-border mb-3">
-                                <div className="card-header text-center">
-                                    <i className="fa fa-code fa-3x" aria-hidden="true"></i>
-                                </div>
-                                <div className="card-body text-center">
-                                    <h4 className="card-title">Dark card title</h4>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                            <div className="card card-border mb-3">
-                                <div className="card-header text-center">
-                                    <i className="fa fa-code fa-3x" aria-hidden="true"></i>
-                                </div>
-                                <div className="card-body text-center">
-                                    <h4 className="card-title">Dark card title</h4>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                            <div className="card card-border mb-3">
-                                <div className="card-header text-center">
-                                    <i className="fa fa-code fa-3x" aria-hidden="true"></i>
-                                </div>
-                                <div className="card-body text-center">
-                                    <h4 className="card-title">Dark card title</h4>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                            <div className="card card-border mb-3">
-                                <div className="card-header text-center">
-                                    <i className="fa fa-code fa-3x" aria-hidden="true"></i>
-                                </div>
-                                <div className="card-body text-center">
-                                    <h4 className="card-title">Dark card title</h4>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk
-                                        of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="row justify-content-center mx-lg-5 mt-3 p-2">
+                        {
+                            cards.map(card => <CardItem key={card.id} card={card} />)
+                        }
                     </div>
                 </section>
 
             </div>
+            <Footer />
         </React.Fragment>
     )
 }
