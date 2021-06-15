@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.js": "/dukzcode/static/js/main.4ce47c92.chunk.js",
-    "main.js.map": "/dukzcode/static/js/main.4ce47c92.chunk.js.map",
+    "main.css": "/dukzcode/static/css/main.593606aa.chunk.css",
+    "main.js": "/dukzcode/static/js/main.6a9f4965.chunk.js",
+    "main.js.map": "/dukzcode/static/js/main.6a9f4965.chunk.js.map",
     "runtime-main.js": "/dukzcode/static/js/runtime-main.29f99c81.js",
     "runtime-main.js.map": "/dukzcode/static/js/runtime-main.29f99c81.js.map",
-    "static/js/2.94a98d5a.chunk.js": "/dukzcode/static/js/2.94a98d5a.chunk.js",
-    "static/js/2.94a98d5a.chunk.js.map": "/dukzcode/static/js/2.94a98d5a.chunk.js.map",
+    "static/js/2.b230c4e7.chunk.js": "/dukzcode/static/js/2.b230c4e7.chunk.js",
+    "static/js/2.b230c4e7.chunk.js.map": "/dukzcode/static/js/2.b230c4e7.chunk.js.map",
     "index.html": "/dukzcode/index.html",
-    "static/js/2.94a98d5a.chunk.js.LICENSE.txt": "/dukzcode/static/js/2.94a98d5a.chunk.js.LICENSE.txt"
+    "static/css/main.593606aa.chunk.css.map": "/dukzcode/static/css/main.593606aa.chunk.css.map",
+    "static/js/2.b230c4e7.chunk.js.LICENSE.txt": "/dukzcode/static/js/2.b230c4e7.chunk.js.LICENSE.txt",
+    "static/media/promo-figure-alt.066b7258.svg": "/dukzcode/static/media/promo-figure-alt.066b7258.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.29f99c81.js",
-    "static/js/2.94a98d5a.chunk.js",
-    "static/js/main.4ce47c92.chunk.js"
+    "static/js/2.b230c4e7.chunk.js",
+    "static/css/main.593606aa.chunk.css",
+    "static/js/main.6a9f4965.chunk.js"
   ]
 }
