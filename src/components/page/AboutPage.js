@@ -1,8 +1,12 @@
 import React from 'react';
+import Navbar from '../ui/Navbar';
 
 const AboutPage = () => {
     return (
-        <h1>About Page!</h1>
+        <React.Fragment>
+            <Navbar />
+            <h1>About Page!</h1>
+        </React.Fragment>
     )
 }
 
