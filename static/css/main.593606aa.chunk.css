@@ -1,2 +1,0 @@
-body{font-family:"Inconsolata",monospace}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-thumb{background:var(--dark);border-radius:6px;border:1px solid var(--success)}::-webkit-scrollbar-thumb:hover{background:var(--dark);border:1px solid var(--danger)}.text-initial{font-size:medium;color:#fff!important}.card-border{border:2px solid;border-image-slice:1;border-image-source:linear-gradient(270deg,var(--success),var(--danger))}.card-border:hover{cursor:pointer}
-/*# sourceMappingURL=main.593606aa.chunk.css.map */
