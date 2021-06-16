@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dukzcode/static/css/main.e056f951.chunk.css",
-    "main.js": "/dukzcode/static/js/main.817fb6f9.chunk.js",
-    "main.js.map": "/dukzcode/static/js/main.817fb6f9.chunk.js.map",
+    "main.js": "/dukzcode/static/js/main.c194ea27.chunk.js",
+    "main.js.map": "/dukzcode/static/js/main.c194ea27.chunk.js.map",
     "runtime-main.js": "/dukzcode/static/js/runtime-main.29f99c81.js",
     "runtime-main.js.map": "/dukzcode/static/js/runtime-main.29f99c81.js.map",
     "static/js/2.e81ae84f.chunk.js": "/dukzcode/static/js/2.e81ae84f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.29f99c81.js",
     "static/js/2.e81ae84f.chunk.js",
     "static/css/main.e056f951.chunk.css",
-    "static/js/main.817fb6f9.chunk.js"
+    "static/js/main.c194ea27.chunk.js"
   ]
 }
