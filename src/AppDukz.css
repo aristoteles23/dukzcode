@@ -3,18 +3,22 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--dark);
+    background: var(--light);
     border-radius: 6px;
-    border: 1px solid var(--success);
+    /*border: 1px solid var(--success);*/
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--secondary);
+    /*border: 1px solid var(--danger);*/
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--dark);
-    border: 1px solid var(--danger);
+    cursor: pointer;
 }
 
 .text-initial {

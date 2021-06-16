@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../ui/Navbar';
 
 const AboutPage = () => {
     return (
         <React.Fragment>
-            <Navbar />
-            <h1>About Page!</h1>
+            <div className="container-fluid p-3 animate__animated animate__fadeIn">
+                <h1>About Page!</h1>
+            </div>
         </React.Fragment>
     )
 }

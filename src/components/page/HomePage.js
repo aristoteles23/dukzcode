@@ -1,22 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from '../ui/Navbar';
-import Footer from '../ui/Footer';
+import React, { useMemo } from 'react';
 import utilService from '../../data/utilService';
 import CardItem from '../home/CardItem';
 import homeImage from '../../promo-figure-alt.svg';
 
 const HomePage = () => {
 
-    const [cards, setCards] = useState([]);
-
-    useEffect(() => {
-        setCards(utilService.getCardsHome());
-    }, [])
+    const cards = useMemo(() => utilService.getCardsHome(), []);
 
     return (
         <React.Fragment>
-            <Navbar />
-            <div className="container-fluid p-3">
+            <div className="container-fluid p-3 animate__animated animate__fadeIn">
                 <section>
                     <div className="row align-items-center justify-content-center m-3">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -55,7 +48,6 @@ const HomePage = () => {
                 </section>
 
             </div>
-            <Footer />
         </React.Fragment>
     )
 }

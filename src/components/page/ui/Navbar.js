@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import logoImage from '../../site-logo.svg';
+import logoImage from '../../../site-logo.svg';
 
 const Navbar = () => {
     const [search, setSearch] = useState('');
@@ -8,7 +8,8 @@ const Navbar = () => {
     const searchOnSubmit = (e) => {
         e.preventDefault();
         if (search !== '') {
-            history.push('/search/' + search)
+            history.replace('/search/' + search);
+            setSearch('');
         }
     }
 
@@ -45,7 +46,13 @@ const Navbar = () => {
                             </li>
                         </ul>
                         <form className="d-flex" onSubmit={searchOnSubmit}>
-                            <input className="form-control me-sm-2" onChange={searchOnChange} type="text" name="v" placeholder="Write for Search" autoComplete="off" />
+                            <input onChange={searchOnChange}
+                                className="form-control me-sm-2"
+                                type="text"
+                                placeholder="Write for Search"
+                                autoComplete="off"
+                                value={search}
+                            />
                             <button className="btn btn-success my-2 my-sm-0" type="submit">
                                 <i className="fa fa-search" aria-hidden="true"></i>
                             </button>

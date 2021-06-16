@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom';
-import Navbar from '../ui/Navbar';
 
 const SearchPage = () => {
-    let { v } = useParams();
-    console.log('Param: ' + v);
+    let { param } = useParams();
+    console.log('Param: ' + param);
     return (
         <React.Fragment>
-            <Navbar />
-            <div className="container-fluid p-3">
+            <div className="container-fluid p-3 animate__animated animate__fadeIn">
                 <section>
                     <h2>Se encontraron 5 resultado</h2>
 
